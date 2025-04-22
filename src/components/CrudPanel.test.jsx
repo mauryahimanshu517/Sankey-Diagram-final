@@ -23,7 +23,7 @@ const mockStore = configureStore([]);
 
 const setup = (storeState) => {
     const store = mockStore(storeState);
-    store.dispatch = jest.fn(); // spy on dispatch
+    store.dispatch = jest.fn(); 
     render(
         <Provider store={store}>
             <CrudPanel />
@@ -52,7 +52,6 @@ describe('CrudPanel', () => {
     it('should delete a node', () => {
         const store = setup({ data: { nodes: [{ id: 'X' }], links: [] } });
 
-        // If there are multiple "Delete" buttons, target the right one
         const deleteButtons = screen.getAllByText('Delete');
         fireEvent.click(deleteButtons[0]);
 

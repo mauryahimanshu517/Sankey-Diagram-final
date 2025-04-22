@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
 
-// ✅ Only run this if HTMLCanvasElement exists
 if (typeof HTMLCanvasElement !== 'undefined') {
   HTMLCanvasElement.prototype.getContext = () => {
     return {

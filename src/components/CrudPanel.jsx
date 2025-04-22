@@ -7,7 +7,7 @@ import {
   removeLink,
   updateLinkValue
 } from '../redux/dataSlice';
-
+//reducer/dispatching
 const CrudPanel = () => {
   const dispatch = useDispatch();
   const { nodes, links } = useSelector((state) => state.data);

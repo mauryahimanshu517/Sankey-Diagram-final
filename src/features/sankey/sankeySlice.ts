@@ -1,4 +1,4 @@
-// features/sankey/sankeySlice.ts
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface SankeyNode {
