@@ -10,7 +10,7 @@ const SankeyChart = () => {
   const chartRef = useRef(null);
   const canvasRef = useRef(null);
 
-  const { nodes, links } = useSelector((state) => state.data);
+  const { nodes, links } = useSelector((state) => state.data);//getting data from redux store
 
   useEffect(() => {
     if (!canvasRef.current) return;
