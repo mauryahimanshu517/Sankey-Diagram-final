@@ -30,17 +30,18 @@ const SankeyChart = () => {
     }));
 
    
+    // Configure the chart
     chartRef.current = new Chart(ctx, {
       type: 'sankey',
       data: {
         datasets: [
           {
-            label: 'Income vs Expenditure',
+            // label: 'Income vs Expenditure',
             data: sankeyData,
             colorFrom: 'blue',
             colorTo: 'green',
             labels: nodes.map((node) => node.id),
-            borderWidth: 1,
+            borderWidth: 5,
             borderColor: 'gray',
           },
         ],
